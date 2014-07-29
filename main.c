@@ -24,10 +24,10 @@ void menu()
 	printf("\n1  - Matricular Aluno no Curso");
 	printf("\n2  - Remover Aluno da lista de matriculados");
 	printf("\n3  - Remover Aluno da fila de espera");
-    printf("\n4  - Listar Alunos matriculados");
-    printf("\n5  - Listar Alunos da fila de espera");
-    printf("\n6  - Opcional 1");
-    printf("\n7  - Opcional 2");
+	printf("\n4  - Listar Alunos matriculados");
+	printf("\n5  - Listar Alunos da fila de espera");
+	printf("\n6  - Opcional 1");
+	printf("\n7  - Opcional 2");
 	printf("\n-1 - Sair");
 }
 
