@@ -6,15 +6,15 @@
 typedef struct aluno
 {
 	int ra;
-    int cp;
-
-    char nome[MAX];
-    char curso[MAX];
-    char telefone[MAX];
-    char email[MAX];
-    
-    time_t time_matricula;
-    time_t time_espera;
+	int cp;
+	
+	char nome[MAX];
+	char curso[MAX];
+	char telefone[MAX];
+	char email[MAX];
+	
+	time_t time_matricula;
+	time_t time_espera;
 }aluno;
 
 aluno novo_aluno();
