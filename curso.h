@@ -5,9 +5,9 @@
 
 typedef struct curso
 {
-    char nome[MAX];
-    int vagas;
-    lista* matriculados;
+	char nome[MAX];
+	int vagas;
+	lista* matriculados;
 	lista* fila_espera;
 }curso;
 
