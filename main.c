@@ -14,8 +14,8 @@ int main()
 		fflush(stdin);
 		executaOpcao(opcao, c);
 	}while(opcao != -1);
-
-    return 0;
+	
+	return 0;
 }
 
 void menu()
@@ -105,7 +105,7 @@ void executaOpcao(int opcao, curso *c)
 				printf("Aluno: %s - RA: %d removido do Curso: %s\n", a.nome, a.ra, c->nome);
 			}
 			break;
-    	case 4: 
+		case 4: 
 	  		time (&data_atual);
 	  		printf ( "Data e Hora Atual: %s", asctime (localtime(&data_atual)) );
 			printf("Alunos Matriculados:\n");
@@ -123,14 +123,12 @@ void executaOpcao(int opcao, curso *c)
 		case 7:
 			 opc_02(c);
 			 break;
-    	case -1:
+		case -1:
     			printf("Saindo\n");
     			break;
 		default:
     			printf("erro\n");
 	}	
-
-	
 	system("read -p \"Pressione enter para continuar\" continuar");
 }
 
@@ -194,7 +192,7 @@ void opc_02(curso* c)
 {
 	int size = c->matriculados->tamanho + c->fila_espera->tamanho;
 	
-    //vetor de alunos
+	//vetor de alunos
 	aluno* a = (aluno*) calloc(size, sizeof(aluno));
 	aluno aluno_aux;
 
@@ -202,7 +200,7 @@ void opc_02(curso* c)
 	int j;
 	int k = size - 1;
 
-    //adiciona todos os alunos matriculados no vetor
+	//adiciona todos os alunos matriculados no vetor
 	no* aux;
 	aux = c->matriculados->raiz;	
 	for(i=0; aux != NULL ; i++)
@@ -212,7 +210,7 @@ void opc_02(curso* c)
 		aux = aux->prox;	
 	}
 
-    //adiciona todos os alunos na fila de espera no vetor
+	//adiciona todos os alunos na fila de espera no vetor
 	aux = c->fila_espera->raiz;
 	for(i = i; aux != NULL ; i++)
 	{	
@@ -220,7 +218,7 @@ void opc_02(curso* c)
 		aux = aux->prox;	
 	}
 
-    //ordena o vetor utilizando bubble sort
+	//ordena o vetor utilizando bubble sort
 	for(i = 0; i < size; i++)
 	{
 		for(j = 0; j < k; j++)
