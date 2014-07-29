@@ -8,15 +8,14 @@
 
 typedef struct nodo_aluno
 {
-    
 	aluno dados;
-    struct nodo_aluno* prox;
+	struct nodo_aluno* prox;
 }no;
 
 typedef struct lista
 {
 	int tamanho;
-    no* raiz;
+	no* raiz;
 }lista;
 
 lista* cria_lista();
